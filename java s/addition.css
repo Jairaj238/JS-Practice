@@ -1,0 +1,27 @@
+.main{
+    .main{
+            display: grid;
+            grid: auto auto / auto auto auto auto;
+            grid-gap: 10px;
+            background-color: black;
+            padding: 10px;
+        }
+
+     .a{
+            background-color: grey;
+            text-align: center;
+            color: white;
+            padding: 10px 10px;
+            font-size: 30px;
+        }
+     }   
+
+.b{
+     position: relative;  
+            display: inline-block;  
+            color: #72fa7c;  
+            padding: 16px 31px;  
+            font-size: 20px;  
+            overflow: hidden;
+          
+}
