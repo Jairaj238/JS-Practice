@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sample Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#6366f1;--muted:#6b7280;--bg:#f3f4f6;--card:#ffffff;--max-width:900px;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;color:#0f172a}
+    *{box-sizing:border-box}
+    body{margin:18px;background:var(--bg);display:flex;justify-content:center}
+    .resume{width:100%;max-width:var(--max-width);background:var(--card);border-radius:10px;box-shadow:0 12px 30px rgba(2,6,23,0.06);display:grid;grid-template-columns:280px 1fr;overflow:hidden}
+    .left{padding:28px;background:linear-gradient(180deg,#ffffff,#fbfdff)}
+    .photo{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#6ee7b7);display:inline-block}
+    .name{font-size:20px;font-weight:700;margin-top:12px}
+    .title{color:var(--muted);font-weight:600;margin-top:4px}
+    .contact{margin-top:16px;font-size:14px;color:var(--muted);line-height:1.6}
+    .section{margin-top:20px}
+    .section h3{font-size:12px;text-transform:uppercase;margin:0 0 8px 0;color:var(--muted)}
+    .skill{display:inline-block;background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-weight:600;font-size:13px}
+    .mini{font-size:13px;color:#111827}
+    .right{padding:28px}
+    .summary strong{font-size:16px}
+    .muted{color:var(--muted)}
+    .job{margin-top:14px}
+    .job-title{font-weight:700}
+    .job-meta{color:var(--muted);font-size:13px}
+    ul.bullet{margin:8px 0 0 18px}
+    a{color:var(--accent);text-decoration:none}
+    .links a{display:block;word-break:break-all}
+    @media (max-width:820px){.resume{grid-template-columns:1fr}.left{order:2}.right{order:1}}
+    @media print{body{background:white;margin:0}.resume{box-shadow:none;border-radius:0}.no-print{display:none}}
+    .download-btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="resume" id="resume">
+    <aside class="left">
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="photo" aria-hidden></div>
+        <div>
+          <div class="name">Your Name</div>
+          <div class="title">Job Title (e.g., Software Engineer)</div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="mini">📞 +91 XXXXX XXXXX</div>
+        <div class="mini">✉️ <a href="mailto:youremail@example.com">youremail@example.com</a></div>
+        <div class="mini links">🔗 <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></div>
+        <div class="mini links">🔗 <a href="https://github.com/yourusername" target="_blank">GitHub</a></div>
+      </div>
+
+      <div class="section">
+        <h3>Technical Skills</h3>
+        <div>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">SQL</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Certificates</h3>
+        <div class="mini">Google Data Analytics — Coursera</div>
+        <div class="mini">Frontend Development Bootcamp</div>
+      </div>
+
+      <div class="section no-print" style="margin-top:18px">
+        <button class="download-btn" onclick="window.print()">Download / Print</button>
+      </div>
+    </aside>
+
+    <main class="right">
+      <div class="summary">
+        <strong>Summary</strong>
+        <p class="muted">Motivated software developer with hands-on experience in building responsive web applications using modern tools and frameworks.</p>
+      </div>
+
+      <div class="section">
+        <h3>Experience</h3>
+        <div class="job">
+          <div class="job-title">Frontend Intern — Company Name</div>
+          <div class="job-meta">Jan 2025 – Present · Remote</div>
+          <ul class="bullet">
+            <li>Developed UI components with React and Tailwind CSS.</li>
+            <li>Worked on optimizing page performance and accessibility.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Projects</h3>
+        <div class="mini"><strong>Portfolio Website</strong> — Built with HTML, CSS, and JS. <a href="#">View</a></div>
+        <div class="mini" style="margin-top:6px"><strong>Data Analysis Project</strong> — SQL + Python, explored trends and created dashboards. <a href="#">Repo</a></div>
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        <div class="mini"><strong>University Name</strong> — B.Tech (CSE), 2021 - 2025</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
